@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# Usage: viewer.sh <file>
+FILE="$1"
+
+# Check if file exists
+if [ ! -f "$FILE" ]; then
+  echo "Error: File not found"
+  exit 1
+fi
+
+# Output file contents  
+echo "Contents of $FILE:"
+cat "$FILE"
+
+# Show file info
+echo -e "\nFile info:"
+ls -l "$FILE"
+
+Descripción del laboratorio
+
+En este laboratorio, mejorará el script de visor de archivos proporcionado para manejar casos de error, imprimir detalles adicionales de los archivos y 
+admitir la visualización de varios archivos.
+
+Pasos del laboratorio
+
+Manejar el caso cuando no se pasa ningún argumento de archivo
+
+Imprima el tamaño del archivo en un formato legible para el ser humano
+
+Imprima la última fecha de modificación del archivo
+
+Actualice el script para permitir la visualización de múltiples archivos pasados como argumentos
+
+Asegúrese de que el script funciona correctamente con archivos o rutas no válidos
+
+Preguntas de reflexión
+
+¿En qué casos podría fallar el script si no se realiza primero una comprobación de archivos?
+
+¿Por qué es importante el manejo de errores al escribir programas CLI?
+
+¿Cómo podría ampliarse este script para que admita más tipos de archivos?
+
+¿Cuáles son algunos de los retos a la hora de diseñar herramientas CLI?
+
+¿Cómo podría ayudarle este script visor en su flujo de trabajo?
+
+Exploración de retos
+
+Explore cómo ver el contenido de un archivo CSV
+
+Investigue cómo excluir archivos específicos de ser procesados
+
+Investigar opciones de formato personalizadas para el tamaño del archivo y la fecha
+
+Piense en cómo añadir interactividad con las indicaciones de entrada
+
+Piense en cómo integrar la documentación de ayuda en el script
